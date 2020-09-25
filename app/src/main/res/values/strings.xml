@@ -6,4 +6,8 @@
     <string name="nome">Nome</string>
     <string name="pass">Senha:</string>
     <string name="senha">Senha</string>
+    <string name="btnlog">ENTRAR</string>
+    <string name="cadastro">CADASTRAR MÓVEL</string>
+    <string name="oferta">OFERTA</string>
+    <string name="table">SUA MESA</string>
 </resources>
