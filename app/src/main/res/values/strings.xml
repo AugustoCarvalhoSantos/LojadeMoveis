@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="logo">Loja de Móveis</string>
+    <string name="login">Login</string>
+    <string name="user">Usuário:</string>
+    <string name="nome">Nome</string>
+    <string name="pass">Senha:</string>
+    <string name="senha">Senha</string>
+</resources>
