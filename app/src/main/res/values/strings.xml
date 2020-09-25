@@ -10,4 +10,18 @@
     <string name="cadastro">CADASTRAR MÓVEL</string>
     <string name="oferta">OFERTA</string>
     <string name="table">SUA MESA</string>
+    <string name="cadCad">Cadastro</string>
+    <string name="tpmovel">Tipo:</string>
+    <string name="medida">Medidas:</string>
+    <string name="preco">Preço:</string>
+    <string name="cor">Cor:</string>
+    <string name="material">Material:</string>
+    <string name="codigo">Seu Código:</string>
+    <string name="httpmovel">Tipo</string>
+    <string name="htmedida">XX,XX,XX</string>
+    <string name="htpreco">R$XXX,xx</string>
+    <string name="htcor">Cor</string>
+    <string name="htmaterial">Material</string>
+    <string name="htcodigo">XX</string>
+    <string name="btnenviar">ENVIAR</string>
 </resources>
