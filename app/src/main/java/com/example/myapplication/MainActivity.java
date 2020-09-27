@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editTextUser;
+    EditText editTextUser, editTextSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +18,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         editTextUser = (EditText)findViewById(R.id.editTextUser);
+        editTextSenha = (EditText)findViewById(R.id.editTextSenha);
 
     }
     public void Entrar(View view) {
-        Intent intent = new Intent(MainActivity.this, Browse.class);
-        intent.putExtra("Valor", editTextUser.getText().toString());
-        startActivity(intent);
-        finish();
+        if(validacao()) {
+            Intent intent = new Intent(MainActivity.this, Browse.class);
+            intent.putExtra("Valor", editTextUser.getText().toString());
+            startActivity(intent);
+        }
+    }
+    public boolean validacao(){
+
+        boolean retorno=true;
+
+        String User = editTextUser.getText().toString();
+        String Senha = editTextSenha.getText().toString();
+        if(User.isEmpty() || Senha.isEmpty()){
+            retorno = false;
+            editTextUser.setError("Preencha este campo!");
+            editTextSenha.setError("Preencha este campo!");
+        }
+        return retorno;
     }
 }
