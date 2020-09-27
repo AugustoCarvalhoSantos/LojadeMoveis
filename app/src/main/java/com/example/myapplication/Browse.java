@@ -9,10 +9,16 @@ import android.widget.TextView;
 
 public class Browse extends AppCompatActivity {
 
+    TextView txtWellcome;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browse);
+
+        txtWellcome = (TextView)findViewById(R.id.textWellcome);
+        String valor = getIntent().getStringExtra("Valor");
+        txtWellcome.setText("Bem Vindo(a), " + valor);
 
     }
     public void Cadastro(View view) {
