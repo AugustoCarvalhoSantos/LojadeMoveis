@@ -34,4 +34,6 @@
     <string name="descmesa">mesa inteira</string>
     <string name="wellcome">Bem Vindo(a),</string>
     <string name="btncomp">COMPRAR</string>
+    <string name="btnfoto">Tirar Foto do Móvel</string>
+    <string name="descfoto">Foto do móvel</string>
 </resources>
