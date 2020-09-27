@@ -87,7 +87,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editTextUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
@@ -122,13 +122,15 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editTextSenha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/senha"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColorHighlight="@color/preto"
+                android:textColorLink="@color/preto" />
 
             <Space
                 android:layout_width="wrap_content"

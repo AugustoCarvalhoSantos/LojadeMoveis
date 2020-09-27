@@ -24,4 +24,14 @@
     <string name="htmaterial">Material</string>
     <string name="htcodigo">XX</string>
     <string name="btnenviar">ENVIAR</string>
+    <string name="txtoferta">Oferta</string>
+    <string name="imgarmario">imagem de armario</string>
+    <string name="descarmario1">Kit armário de cozinha</string>
+    <string name="descarmario2">Madeira/mármore</string>
+    <string name="descarmario3">Branco/bege</string>
+    <string name="descarmario4">Por apenas R$699,99</string>
+    <string name="mesa">Sua Mesa</string>
+    <string name="descmesa">mesa inteira</string>
+    <string name="wellcome">Bem Vindo(a),</string>
+    <string name="btncomp">COMPRAR</string>
 </resources>

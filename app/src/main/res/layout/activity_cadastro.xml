@@ -63,7 +63,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/httpmovel"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColorHighlight="@color/preto"
+                android:textColorLink="@color/preto" />
 
             <Space
                 android:layout_width="25dp"
@@ -83,7 +85,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htmedida"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/preto"
+                android:textColorLink="@color/preto" />
         </LinearLayout>
 
         <LinearLayout
@@ -106,7 +110,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htpreco"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/preto"
+                android:textColorLink="@color/preto" />
 
             <Space
                 android:layout_width="42dp"
@@ -128,7 +134,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htcor"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/preto"
+                android:textColorLink="@color/preto" />
         </LinearLayout>
 
         <LinearLayout
@@ -150,7 +158,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htmaterial"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/preto"
+                android:textColorLink="@color/preto" />
 
             <Space
                 android:layout_width="0dp"
@@ -171,7 +181,9 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htcodigo"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/preto"
+                android:textColorLink="@color/preto" />
         </LinearLayout>
 
         <LinearLayout
