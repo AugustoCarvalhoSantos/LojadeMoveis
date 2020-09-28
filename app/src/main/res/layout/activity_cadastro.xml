@@ -57,7 +57,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/editTextTipo"
                 android:layout_width="107dp"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
@@ -79,7 +79,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/editTextMedidas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
@@ -103,14 +103,14 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/editTextPreco"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htpreco"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColor="@color/preto"
                 android:textColorLink="@color/preto" />
 
@@ -127,7 +127,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/editTextCor"
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -152,7 +152,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/editTextMaterial"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
@@ -175,13 +175,13 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/editTextCod"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/htcodigo"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColor="@color/preto"
                 android:textColorLink="@color/preto" />
         </LinearLayout>
@@ -189,7 +189,7 @@
         <ImageView
             android:id="@+id/imgFoto"
             android:layout_width="match_parent"
-            android:layout_height="116dp"
+            android:layout_height="58dp"
             android:contentDescription="@string/descfoto"
             app:srcCompat="?attr/selectableItemBackground" />
 
@@ -210,6 +210,30 @@
                 android:background="@color/fundo"
                 android:onClick="Foto"
                 android:text="@string/btnfoto" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/fundo"
+                android:onClick="Cadastrar"
+                android:text="@string/btnenviar" />
 
             <Space
                 android:layout_width="wrap_content"

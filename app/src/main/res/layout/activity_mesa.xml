@@ -44,11 +44,32 @@
                 android:layout_weight="1" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <TextView
+            android:id="@+id/textView15"
             android:layout_width="match_parent"
-            android:layout_height="345dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desmesaactivity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imgMesa"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
             android:contentDescription="@string/descmesa"
             app:srcCompat="@drawable/mesa1" />
+
+        <TextView
+            android:id="@+id/txtQuebrou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/txtAviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

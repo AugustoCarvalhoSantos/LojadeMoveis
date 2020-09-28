@@ -19,7 +19,7 @@
     <string name="codigo">Seu Código:</string>
     <string name="httpmovel">Tipo</string>
     <string name="htmedida">XX,XX,XX</string>
-    <string name="htpreco">R$XXX,xx</string>
+    <string name="htpreco">XXX,xx</string>
     <string name="htcor">Cor</string>
     <string name="htmaterial">Material</string>
     <string name="htcodigo">XX</string>
@@ -36,4 +36,6 @@
     <string name="btncomp">COMPRAR</string>
     <string name="btnfoto">Tirar Foto do Móvel</string>
     <string name="descfoto">Foto do móvel</string>
+    <string name="btnBack">Voltar</string>
+    <string name="desmesaactivity">(Não sacuda ela!)</string>
 </resources>

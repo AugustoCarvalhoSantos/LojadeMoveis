@@ -16,7 +16,7 @@ public class Browse extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browse);
 
-        txtWellcome = (TextView)findViewById(R.id.textWellcome);
+        txtWellcome = findViewById(R.id.textWellcome);
         String valor = getIntent().getStringExtra("Valor");
         txtWellcome.setText("Bem Vindo(a), " + valor);
 
