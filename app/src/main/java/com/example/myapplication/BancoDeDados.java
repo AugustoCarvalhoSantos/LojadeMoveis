@@ -58,7 +58,7 @@ public class BancoDados extends SQLiteOpenHelper {
         values.put(COLUNA_MATERIAL, movel.getMaterial());
         values.put(COLUNA_PRECO, movel.getPreco());
 
-        db.insert(TABELA_MOVEL, null, values);
+        db.insert(TABELA_MOVEL,  null, values);
         db.close();
     }
 }
