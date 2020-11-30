@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 public class CadastroFinal extends AppCompatActivity {
 
-    TextView txtTipo, txtMedidas, txtPreco, txtCor, txtMaterial, txtCod;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

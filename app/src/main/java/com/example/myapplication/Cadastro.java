@@ -7,15 +7,18 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Cadastro extends AppCompatActivity {
 
     EditText editTextTipo, editTextMedidas, editTextPreco, editTextCor, editTextMaterial, editTextCod;
-
+    Button btnCad;
     private static final int CAMERA = 0;
     ImageView imgFoto;
+
+    BancoDados db = new BancoDados(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +33,26 @@ public class Cadastro extends AppCompatActivity {
         editTextCod = (EditText)findViewById(R.id.editTextCod);
 
         imgFoto = (ImageView)findViewById(R.id.imgFoto);
-    }
-    public void Cadastrar(View view){
-        Intent intent = new Intent(Cadastro.this, CadastroFinal.class);
-        intent.putExtra("Valor", editTextTipo.getText().toString());
-        intent.putExtra("Valor2", editTextMedidas.getText().toString());
-        intent.putExtra("Valor3", editTextPreco.getText().toString());
-        intent.putExtra("Valor4", editTextCor.getText().toString());
-        intent.putExtra("Valor5", editTextMaterial.getText().toString());
-        intent.putExtra("Valor6", editTextCod.getText().toString());
-        startActivity(intent);
+
+        btnCad = (Button)findViewById(R.id.btnCad);
+
+    btnCad.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View v) {
+            String cod = editTextCod.getText().toString();
+            String tipo = editTextTipo.getText().toString();
+            String medida = editTextMedidas.getText().toString();
+            String preco =  editTextPreco.getText().toString();
+            String cor = editTextCor.getText().toString();
+            String material = editTextMaterial.getText().toString();
+
+            if(cod.isEmpty()){
+                editTextCod.setError("Este campo é obrigatorio");
+            } else if(tipo.isEmpty()){
+                //insert
+                db.addMovel(new Movel(cod, tipo, medida, preco, cor, material));
+            }
+        }
+    });
     }
     public void Foto(View view){
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
